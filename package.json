@@ -1,0 +1,22 @@
+{
+  "name": "aqa-advanced-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yhladii/aqa-advanced-playwright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yhladii/aqa-advanced-playwright/issues"
+  },
+  "homepage": "https://github.com/yhladii/aqa-advanced-playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0"
+  }
+}
