@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 import RegistrationPage from "../pages/RegistrationPage";
 import RegistrationForm from "../pages/RegistrationForm";
 import { generateUser } from "../utils/userGenerator";
-
+console.log('BASE_URL:', process.env.BASE_URL)
 test.describe("Registration tests", () => {
   test("Positive: successful registration", async ({ page }) => {
     const regPage = new RegistrationPage(page);
@@ -75,7 +75,7 @@ test.describe("Registration tests", () => {
     await form.lastName().blur();
     await expect(page.getByText("Last name required")).toBeVisible();
   });
-  test("Negative: laast is too short or too long", async ({ page }) => {
+  test("Negative: last is too short or too long", async ({ page }) => {
     const regPage = new RegistrationPage(page);
     const form = new RegistrationForm(page);
 
