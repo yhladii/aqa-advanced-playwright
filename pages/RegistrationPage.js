@@ -4,8 +4,8 @@ export default class RegistrationPage extends BasePage {
         super(page)
     }
     async openRegistration(){
-        await this.visit('https://guest:welcome2qauto@qauto.forstudy.space/'),
-        await this.clickByText('Sign in'),
+        await this.visit('/'),
+        await this.clickByText('Sign In'),
         await this.clickByText('Registration')
     }
 }
