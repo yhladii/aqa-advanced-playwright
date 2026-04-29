@@ -35,9 +35,6 @@ module.exports = defineConfig({
     {
       name: 'chromium',
       dependencies: ['setup'],
-      use: {
-        storageState: 'playwright/.auth/user.json',
-      },
     },
   ],
 });
